@@ -179,7 +179,7 @@ main {
 
 /* About__us */
 
-#about__us{
+#about__us {
     padding-top: 120px;
 }
 
@@ -242,9 +242,113 @@ main {
 }
 
 
+/* Footer */
+
+footer {
+    border-top: 5px solid rgba(156, 105, 226, 0.2);
+    color: #212353;
+}
+
+.footer {
+    padding-top: 180px;
+    margin-bottom: 70px;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer__main__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__main__left__logo__text__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.footer__main__left__logo__text__wrapper__logo__wrapper {
+    width: auto;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.footer__main__left__logo__text__wrapper__logo__wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer__main__left__logo__text__wrapper span {
+    font-family: ubuntu-regular;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+address {
+    font-family: ubuntu-regular;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+ul.footer__main__left__contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.footer__main__left__contacts__wrapper li a {
+    color: #212353;
+    font-family: ubuntu-regular;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.footer__main__right__social__media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__main__right__social__media__header h4 {
+    font-family: ubuntu-regular;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.footer__main__right__social__media__wrapper {
+    display: flex;
+    margin-left: -30px;
+    margin-top: 30px;
+}
+
+ul.footer__main__right__social__media__wrapper li {
+    width: 45px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+ul.footer__main__right__social__media__wrapper li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer__secondary p {
+    font-family: ubuntu-regular;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
 /* Tablet */
 
 @media only screen and (max-width: 992px) {
+    /* Navbar */
     .navbar {
         height: 100px;
     }
@@ -258,6 +362,7 @@ main {
     .navbar__sections__section a {
         font-size: 18px;
     }
+    /* landing main page */
     main {
         padding-top: 100px;
     }
@@ -302,28 +407,26 @@ main {
         height: 100%;
         object-fit: cover;
     }
-    #about__us{
+    /* About-us */
+    #about__us {
         padding-top: 100px;
     }
     .about__us {
-        padding:  5rem 5rem 3rem ;
+        padding: 5rem 5rem 3rem;
         display: flex;
         flex-direction: column-reverse;
         border-radius: 45px;
     }
-    
     .about__us__left {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
     }
-    
     .about__us__left__image__wrapper {
         width: 100%;
         height: auto;
     }
-    
     .about__us__right {
         width: 100%;
         display: flex;
@@ -331,24 +434,68 @@ main {
         align-items: flex-start;
         padding-left: 0;
     }
-    
     .about__us__right__header__wrapper h2 {
         font-size: 2.5rem;
         margin-bottom: 30px;
         line-height: 3rem;
     }
-    
     .about__us__right__text__wrapper p {
         font-size: 20px;
         line-height: 28px;
     }
-    
+    /* Footer */
+    footer {
+        border-top: 4px solid rgba(156, 105, 226, 0.2);
+    }
+    .footer {
+        padding-top: 150px;
+        margin-bottom: 60px;
+    }
+    .footer__main {
+        margin-bottom: 40px;
+    }
+    .footer__main__left__logo__text__wrapper {
+        margin-bottom: 60px;
+    }
+    .footer__main__left__logo__text__wrapper__logo__wrapper {
+        height: 40px;
+        margin-right: 25px;
+    }
+    .footer__main__left__logo__text__wrapper span {
+        font-size: 22px;
+    }
+    address {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    ul.footer__main__left__contacts__wrapper li a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .footer__main__right__social__media__header h4 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .footer__main__right__social__media__wrapper {
+        margin-left: -25px;
+        margin-top: 25px;
+    }
+    ul.footer__main__right__social__media__wrapper li {
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+    }
+    .footer__secondary p {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 
 /* Tablet-mini */
 
 @media only screen and (max-width: 768px) {
+    /* Navbar */
     .navbar {
         height: 80px;
     }
@@ -382,24 +529,71 @@ main {
         margin-bottom: 40px;
         border-radius: 40px;
     }
-    #about__us{
+    /* About-us */
+    #about__us {
         padding-top: 80px;
     }
     .about__us {
-        padding:  4rem 4rem 2rem ;
+        padding: 4rem 4rem 2rem;
         border-radius: 40px;
     }
-    
     .about__us__right__header__wrapper h2 {
         font-size: 2rem;
         margin-bottom: 25px;
         line-height: 2.5rem;
-
     }
-    
     .about__us__right__text__wrapper p {
         font-size: 18px;
         line-height: 26px;
+    }
+    /* Footer */
+    footer {
+        border-top: 3px solid rgba(156, 105, 226, 0.2);
+    }
+    .footer {
+        padding-top: 120px;
+        margin-bottom: 50px;
+    }
+    .footer__main {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .footer__main__left {
+        margin-bottom: 40px;
+    }
+    .footer__main__left__logo__text__wrapper {
+        margin-bottom: 50px;
+    }
+    .footer__main__left__logo__text__wrapper__logo__wrapper {
+        height: 40px;
+        margin-right: 20px;
+    }
+    .footer__main__left__logo__text__wrapper span {
+        font-size: 20px;
+    }
+    address {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    ul.footer__main__left__contacts__wrapper li a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer__main__right__social__media__header h4 {
+        font-size: 18px;
+    }
+    .footer__main__right__social__media__wrapper {
+        margin-left: -15px;
+        margin-top: 15px;
+    }
+    ul.footer__main__right__social__media__wrapper li {
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+    }
+    .footer__secondary p {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -439,25 +633,69 @@ main {
         font-size: 14px;
         margin-bottom: 30px;
         border-radius: 35px;
-
     }
-    #about__us{
+    #about__us {
         padding-top: 60px;
     }
     .about__us {
-        padding:  3rem 2rem 1rem ;
+        padding: 3rem 2rem 1rem;
         border-radius: 35px;
     }
-    
     .about__us__right__header__wrapper h2 {
         font-size: 1.5rem;
         margin-bottom: 20px;
         line-height: 2rem;
-
     }
-    
     .about__us__right__text__wrapper p {
         font-size: 1rem;
         line-height: 22px;
+    }
+    /* Footer */
+    footer {
+        border-top: 2px solid rgba(156, 105, 226, 0.2);
+    }
+    .footer {
+        padding-top: 100px;
+        margin-bottom: 40px;
+    }
+    .footer__main {
+        margin-bottom: 30px;
+    }
+    .footer__main__left {
+        margin-bottom: 40px;
+    }
+    .footer__main__left__logo__text__wrapper {
+        margin-bottom: 40px;
+    }
+    .footer__main__left__logo__text__wrapper__logo__wrapper {
+        height: 35px;
+        margin-right: 15px;
+    }
+    .footer__main__left__logo__text__wrapper span {
+        font-size: 18px;
+    }
+    address {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    ul.footer__main__left__contacts__wrapper li a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footer__main__right__social__media__header h4 {
+        font-size: 16px;
+    }
+    .footer__main__right__social__media__wrapper {
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    ul.footer__main__right__social__media__wrapper li {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    .footer__secondary p {
+        font-size: 12px;
+        line-height: 20px;
     }
 }
